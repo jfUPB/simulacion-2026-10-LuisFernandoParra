@@ -1,7 +1,13 @@
 # Unidad 1
 
 ## Bitácora de proceso de aprendizaje
-
+### Actividad 1
+La aleatoriedad en el arte generativo mete un poco de caos creativo que hace que cada pieza salga distinta y sorprendente, incluso para quien la crea.
+### Actividad 2
+* Lo que modifique fueron los patrones de x++ y de y++, y lo cambie por valores negativos.
+* lo que espero que suceda es que la linea vaya hacia abajo y a la izquierda hasta salir del lienzo
+* la linea si se movio en la direccion izquierda hasta salir del lienzo en direccion hacia arriba
+* En parte si ocurrio lo que esperaba ya que la linea si se movio a la izquierda mas sin embargo en vez de hacerlo hacia abajo fue hacia arriba y esto ocurrio porque me confundi con el valor cartesiano en "y del ++ y del --" 
 ### Actividad 3
 * que una distribucion uniforme todos los numeros van saliendo por igual pues todos los numeros tienen la misma probabilidad de salir mientras que una distribucion no uniforme es que hay un numero o una cantidad de numeros que tienden a salir mucho mas que otros
 *
@@ -76,5 +82,6 @@ function draw() {
 
 
 ## Bitácora de reflexión
+
 
 
