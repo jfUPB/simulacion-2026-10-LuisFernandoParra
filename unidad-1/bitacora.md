@@ -77,3 +77,4 @@ function draw() {
 
 ## Bitácora de reflexión
 
+
