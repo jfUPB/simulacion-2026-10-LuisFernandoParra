@@ -77,11 +77,14 @@ function draw() {
 
  <img width="1064" height="479" alt="image" src="https://github.com/user-attachments/assets/5cb62ed5-4ffc-45c6-aeef-c11b648cad0f" />
 
+## Activudad 5
+
 ## Bitácora de aplicación 
 
 
 
 ## Bitácora de reflexión
+
 
 
 
