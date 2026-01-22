@@ -45,9 +45,35 @@ class Walker {
   }
 }
 ```
-  
+## Actividad 4
+*
+```
+// The Nature of Code
+// Daniel Shiffman
+// http://natureofcode.com
+
+function setup() {
+  createCanvas(640, 240);
+  background(200);
+}
+
+function draw() {
+  //{!1} A normal distribution with mean 320 and standard deviation 60
+  let x = randomGaussian(320, 20);
+  let y = randomGaussian(120, 10);
+  noStroke();
+  fill(0, 10);
+  circle(x, y, 16);
+}
+```
+* https://editor.p5js.org/LuisFernandoParra/sketches/Sp3iwLRWh
+
+
+ <img width="1064" height="479" alt="image" src="https://github.com/user-attachments/assets/5cb62ed5-4ffc-45c6-aeef-c11b648cad0f" />
+
 ## Bitácora de aplicación 
 
 
 
 ## Bitácora de reflexión
+
