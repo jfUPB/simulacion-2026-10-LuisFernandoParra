@@ -78,12 +78,66 @@ function draw() {
  <img width="1064" height="479" alt="image" src="https://github.com/user-attachments/assets/5cb62ed5-4ffc-45c6-aeef-c11b648cad0f" />
 
 ## Activudad 5
+*use esta tecnica ya que espero poder simular que la maquina en P5 este escribiendo su propio lienzo como si fuera un humano trazando cosas al azar y que de pronto pueda construir algo interesante
+*
+```
+let walker;
+
+function setup() {
+  createCanvas(640, 240);
+  // Creating the Walker object!
+  walker = new Walker();
+  background(255);
+}
+
+function draw() {
+  walker.step();
+  walker.show();
+}
+
+class Walker {
+  constructor() {
+    this.x = width / 2;
+    this.y = height / 2;
+  }
+
+  show() {
+    stroke(0);
+    point(this.x, this.y);
+  }
+
+  step() {
+    const r = random(1);
+    // A 40% of moving to the right!
+    if (r < 0.4) {
+      this.x++;
+    } else if (r < 0.6) {
+      this.x--;
+    } else if (r < 0.8) {
+      this.y++;
+    } if (r < 0.1){
+      this.x = random(-100, 100);
+      this.y = random(-100, 100);  
+    } else {
+      this.y--;
+    }
+    this.x = constrain(this.x, 0, width - 1);
+    this.y = constrain(this.y, 0, height - 1);
+  }
+}
+```
+* https://editor.p5js.org/natureofcode/full/iAjs_70DF
+ <img width="197" height="197" alt="image" src="https://github.com/user-attachments/assets/62b453ee-2148-46ff-8c05-076c70e4b0e3" />
+
+<img width="555" height="593" alt="image" src="https://github.com/user-attachments/assets/36eb362b-02c0-4fe0-9ee1-353d6e637429" />
+
 
 ## Bitácora de aplicación 
 
 
 
 ## Bitácora de reflexión
+
 
 
 
