@@ -131,12 +131,32 @@ class Walker {
 
 <img width="555" height="593" alt="image" src="https://github.com/user-attachments/assets/36eb362b-02c0-4fe0-9ee1-353d6e637429" />
 
+## Actividad 6
+* Lo que espero es que suceda es generar un circulo el cual de la ilusion que tiene vida o que se mueve por si solo espero principalmente que solo se mueva de izquierda a derecha
+```js
+let t = 0;
+
+function setup() {
+  createCanvas(400, 200);
+}
+
+function draw() {
+  background(220);
+  let n = noise(t);
+  let x = map(n, 0, 1, 0, width);
+  circle(x, height / 2, 20);
+  t += 0.01;
+}
+```
+* https://editor.p5js.org/LuisFernandoParra/full/WM58ZSl2Z
+* <img width="899" height="311" alt="image" src="https://github.com/user-attachments/assets/0f3823cd-e292-4c0f-8642-6a7bf0e2f7bc" />
 
 ## Bitácora de aplicación 
 
 
 
 ## Bitácora de reflexión
+
 
 
 
