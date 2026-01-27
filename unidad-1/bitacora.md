@@ -51,7 +51,7 @@ class Walker {
   }
 }
 ```
-## Actividad 4
+### Actividad 4
 *
 ```
 // The Nature of Code
@@ -77,7 +77,7 @@ function draw() {
 
  <img width="1064" height="479" alt="image" src="https://github.com/user-attachments/assets/5cb62ed5-4ffc-45c6-aeef-c11b648cad0f" />
 
-## Activudad 5
+### Activudad 5
 *use esta tecnica ya que espero poder simular que la maquina en P5 este escribiendo su propio lienzo como si fuera un humano trazando cosas al azar y que de pronto pueda construir algo interesante
 *
 ```
@@ -131,7 +131,7 @@ class Walker {
 
 <img width="555" height="593" alt="image" src="https://github.com/user-attachments/assets/36eb362b-02c0-4fe0-9ee1-353d6e637429" />
 
-## Actividad 6
+### Actividad 6
 * Lo que espero es que suceda es generar un circulo el cual de la ilusion que tiene vida o que se mueve por si solo espero principalmente que solo se mueva de izquierda a derecha
 ```js
 let t = 0;
@@ -150,12 +150,12 @@ function draw() {
 ```
 * https://editor.p5js.org/LuisFernandoParra/full/WM58ZSl2Z
 * <img width="899" height="311" alt="image" src="https://github.com/user-attachments/assets/0f3823cd-e292-4c0f-8642-6a7bf0e2f7bc" />
-
 ## Bitácora de aplicación 
-
+### ACTIVIDAD 7
 
 
 ## Bitácora de reflexión
+
 
 
 
