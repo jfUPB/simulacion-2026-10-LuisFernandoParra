@@ -199,6 +199,30 @@ function keyPressed() {
 
 
 ## Bitácora de reflexión
+### Actividad 8
+* La diferencia fundamental entre random() y el Ruido Perlin (noise()) es la relación entre los valores que generan.
+random() produce números completamente independientes, por lo que cada valor es impredecible y genera cambios bruscos. En cambio, noise() genera valores que varían de forma continua, haciendo que la aleatoriedad se perciba más suave y orgánica.
+
+Usaría random() cuando necesito resultados caóticos o cambios repentinos, y noise() cuando busco movimientos fluidos o simulaciones que se asemejen a fenómenos naturales.
+
+
+
+* Una distribución de probabilidad indica qué tan probable es que ocurra cada posible resultado dentro de un conjunto de valores.
+
+En una caminata con distribución uniforme, todas las direcciones o valores tienen la misma probabilidad, lo que visualmente produce trayectorias más dispersas y desordenadas.
+En cambio, una caminata con distribución normal concentra la mayoría de los valores alrededor de un promedio, lo que genera visualmente agrupaciones y movimientos más controlados, con menos extremos.
+
+
+
+* La aleatoriedad cumple un papel fundamental en el arte generativo porque permite que cada resultado sea único y no completamente predecible.
+Además, introduce variación visual y ayuda a simular comportamientos naturales, logrando un equilibrio entre control del autor y resultados emergentes.
+
+* En mi obra utilicé el Ruido Perlin (noise()) como concepto principal de aleatoriedad para generar el movimiento de los elementos en el lienzo. Elegí este tipo de aleatoriedad porque permite transiciones suaves y continuas, lo que hace que el recorrido del punto se perciba orgánico y no caótico. A diferencia del azar puro, el Ruido Perlin mantiene una relación entre los valores, lo que ayudó a construir una trayectoria coherente y visualmente fluida, acorde al efecto que buscaba en la obra.
+
+
+* Una caminata o “walk” en el contexto de la simulación es un proceso en el que un elemento se desplaza paso a paso siguiendo reglas probabilísticas.
+La caminata tipo Lévy flight se caracteriza por la presencia de muchos pasos cortos y, ocasionalmente, saltos largos e inesperados, lo que genera patrones con concentraciones y desplazamientos abruptos, similares a los que se observan en la naturaleza.
+
 
 
 
