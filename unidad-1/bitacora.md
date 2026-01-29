@@ -153,10 +153,53 @@ function draw() {
 ## Bitácora de aplicación 
 ### ACTIVIDAD 7
 * Este diseño genera una composición interactiva donde un punto se desplaza continuamente por el lienzo siguiendo un movimiento suave controlado por ruido de Perlin; su tamaño varía de forma natural mediante una distribución gaussiana, concentrándose la mayoría de las veces alrededor de un valor medio. Al presionar cualquier tecla, el sistema introduce un salto largo inspirado en una caminata tipo Lévy, alterando de manera puntual la trayectoria y permitiendo que el espectador intervenga activamente en la generación de la obra en tiempo real.
+ ``` JS
+  let x, y;
+let tx = 0;
+let ty = 1;
 
+function setup() {
+  createCanvas(600,600 );
+  background(20);
+  x = width / 2;
+  y = height / 2;
+  noStroke();
+}
+
+function draw() {
+ 
+  let nx = noise(tx);
+  let ny = noise(ty);
+  
+  x = map(nx, 0, 1, 0, width);
+  y = map(ny, 0, 1, 0, height);
+
+  
+  let diametro = randomGaussian(15, 5);
+
+  fill(100, 150, 255, 150);
+  circle(x, y, diametro);
+
+ 
+  tx += 0.005;
+  ty += 0.005;
+}
+
+function keyPressed() {
+ 
+  let magnitud = 200; 
+  tx += magnitud;
+  ty += magnitud;
+  
+ 
+}
+```
+* https://editor.p5js.org/natureofcode/full/O7PsvcpQ3
+<img width="1054" height="520" alt="image" src="https://github.com/user-attachments/assets/f93a62dc-bc6b-4347-8ed7-76a1e4363b41" />
 
 
 ## Bitácora de reflexión
+
 
 
 
