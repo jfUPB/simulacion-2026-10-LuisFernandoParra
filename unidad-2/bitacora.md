@@ -103,4 +103,83 @@ https://editor.p5js.org/LuisFernandoParra/full/5zKQQ4lGn
 
 
 ## Bitácora de reflexión
+### Actividad 10
+- Mi obra se basa en la creación de un sistema de agentes autónomos que no solo reaccionan al usuario, sino que tienen una percepción de su espacio personal."
+``` JS
+let celulas = [];
+let total = 80;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  for (let i = 0; i < total; i++) {
+    celulas.push(new Celula());
+  }
+}
+
+function draw() {
+  
+  background(10, 20, 10, 60);
+
+  for (let c of celulas) {
+    c.update();
+    c.checkEdges();
+    c.show();
+  }
+}
+
+class Celula {
+  constructor() {
+    this.pos = createVector(random(width), random(height));
+    this.vel = p5.Vector.random2D();
+    this.acc = createVector(0, 0);
+    this.maxSpeed = 8;
+  }
+
+  update() {
+    let mouse = createVector(mouseX, mouseY);
+    let dir = p5.Vector.sub(mouse, this.pos);
+    let distancia = dir.mag(); // Medimos la distancia
+    
+    dir.normalize();
+
+    if (distancia < 200) {
+      dir.mult(-1.5); 
+    } else {
+      dir.mult(0.5);
+    }
+
+    this.acc = dir;
+
+    // MARCO MOTION 101
+    this.vel.add(this.acc);
+    this.vel.limit(this.maxSpeed);
+    this.pos.add(this.vel);
+  }
+
+  show() {
+
+    let tam = map(this.vel.mag(), 0, this.maxSpeed, 40, 10);
+    
+
+    let r = map(this.vel.mag(), 0, this.maxSpeed, 50, 255);
+    let g = 255;
+    let b = map(this.vel.mag(), 0, this.maxSpeed, 150, 50);
+
+    noStroke();
+    fill(r, g, b, 200);
+    
+    push();
+    translate(this.pos.x, this.pos.y);
+    rotate(this.vel.heading()); 
+    ellipse(0, 0, tam * 2, tam); 
+    pop();
+  }
+
+  checkEdges() {
+    if (this.pos.x > width || this.pos.x < 0) this.vel.x *= -1;
+    if (this.pos.y > height || this.pos.y < 0) this.vel.y *= -1;
+  }
+}
+```
+https://editor.p5js.org/LuisFernandoParra/full/-xOLzlXC3
 
