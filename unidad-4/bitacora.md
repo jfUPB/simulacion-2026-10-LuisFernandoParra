@@ -7,6 +7,94 @@ estuve explorando cómo salir de la rigidez de las coordenadas cartesianas para 
 
 ## Bitácora de aplicación 
 
+``` JS
+let recuerdos = [];
+let angulo = 0;
 
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+}
+
+function draw() {
+  background(10, 15, 30, 50); // El azul profundo del tiempo
+
+  // REGLA 1: EL BROTE (Coordenadas Polares)
+  let radioBrote = 40;
+  let x = mouseX + radioBrote * cos(angulo);
+  let y = mouseY + radioBrote * sin(angulo);
+  
+  // Cap 0: Aleatoriedad en la aparición
+  if (random(1) > 0.15) {
+    recuerdos.push(new Recuerdo(x, y));
+  }
+
+  for (let i = recuerdos.length - 1; i >= 0; i--) {
+    let r = recuerdos[i];
+
+    // REGLA 3: EL OLVIDO (Cap 2 - Fricción)
+    // La fricción es una fuerza opuesta a la velocidad
+    let friccion = r.vel.copy();
+    friccion.normalize();
+    friccion.mult(-0.05); // Coeficiente de fricción
+    r.applyForce(friccion);
+
+    // REGLA 4: EL RESCATE (Cap 2 - Atracción)
+    if (mouseIsPressed) {
+      let centro = createVector(mouseX, mouseY);
+      let atraccion = p5.Vector.sub(centro, r.pos);
+      atraccion.setMag(0.6); 
+      r.applyForce(atraccion);
+    }
+
+    r.update();
+    r.display();
+
+    if (r.estaMuerto()) {
+      recuerdos.splice(i, 1);
+    }
+  }
+
+  angulo += 0.2; 
+}
+
+class Recuerdo {
+  constructor(x, y) {
+    this.pos = createVector(x, y);
+    // Cap 1: Vector de velocidad inicial aleatorio
+    this.vel = p5.Vector.random2D().mult(random(2, 5));
+    this.acc = createVector(0, 0);
+    this.vida = 255;
+    this.tamanio = random(3, 10); // Cap 0: Aleatoriedad
+  }
+
+  applyForce(f) {
+    this.acc.add(f);
+  }
+
+  update() {
+    this.vel.add(this.acc);
+    this.pos.add(this.vel);
+    this.acc.mult(0); 
+    this.vida -= 2;
+  }
+
+  display() {
+    noStroke();
+    // El color se intensifica cuando el recuerdo está cerca del mouse
+    let d = dist(this.pos.x, this.pos.y, mouseX, mouseY);
+    let brillo = map(d, 0, 200, 255, 100);
+    fill(brillo, 200, 255, this.vida);
+    circle(this.pos.x, this.pos.y, this.tamanio);
+  }
+
+  estaMuerto() {
+    return this.vida < 0;
+  }
+}
+```
+- link: https://editor.p5js.org/LuisFernandoParra/full/jlKe1kRH1
+- <img width="456" height="314" alt="image" src="https://github.com/user-attachments/assets/e15ddb00-a8e0-4545-94bb-2b468669cd43" />
+- <img width="375" height="329" alt="image" src="https://github.com/user-attachments/assets/e6a54889-5279-4192-996a-2bf06d6875e5" />
 
 ## Bitácora de reflexión
+
