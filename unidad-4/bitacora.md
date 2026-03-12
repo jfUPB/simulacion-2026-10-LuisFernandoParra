@@ -99,4 +99,16 @@ class Recuerdo {
 
 ## Bitácora de reflexión
 
+`1. El código como narrativa (Diseño de Experiencias)
+Aprendí que mi fuerte no es solo programar, sino traducir emociones a reglas físicas. En el entretenimiento digital, la oportunidad está en que el usuario "sienta" la historia a través del control. Si quiero representar soledad, no pongo un texto, subo la fricción (Cap. 2) para que al jugador le cueste moverse y sienta el peso del ambiente. Es usar la física para generar empatía.
+
+2. Interfaces que se sienten naturales
+Con las coordenadas polares, aprendí que puedo romper la pantalla cuadrada tradicional. Como ingeniero, puedo diseñar menús o interfaces interactivas que nazcan del usuario, que lo rodeen y que se muevan de forma circular. Eso en juegos o apps de entretenimiento se ve mucho más pro y orgánico que un montón de botones quietos.
+
+3. Comportamientos vivos, no grabados
+Aprendí que los vectores (Cap. 1) son los que mandan si quiero que algo se vea real. En lugar de animar un objeto para que vaya del punto A al B, le doy una fuerza. Esto me sirve para que, si estoy haciendo un juego, los enemigos no parezcan robots, sino que tengan inercia, que les cueste frenar o que se vean atraídos por el jugador de forma fluida. Es pasar de "animar" a "simular vida".
+
+4. Optimización con sentido
+Aprendí que ser un buen ingeniero también es saber cuándo limpiar la casa. El bloque del splice y el ciclo hacia atrás me enseñó que para que una experiencia de entretenimiento sea buena, tiene que ser fluida. No puedo dejar que el sistema se cargue de "basura" (fragmentos muertos), porque eso daña la inmersión del usuario.
+
 
