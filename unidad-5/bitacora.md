@@ -171,7 +171,7 @@ class Flama extends Ceniza {
 ## Bitácora de reflexión
 
 
-## Parte 1 — Los 10 Principios Fundamentales
+##  Los 10 Principios Fundamentales
 
 ### 1. Una partícula es una entidad con estado
 Cada partícula es un objeto independiente con su propia "memoria". No es un simple dibujo en pantalla, sino una entidad que almacena variables específicas como su posición (`pos`), velocidad (`vel`) y nivel de transparencia (`vida`).
