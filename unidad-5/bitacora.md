@@ -5,7 +5,7 @@
 ## Bitácora de aplicación 
 
 
-### 1. Mapa de desiciones
+###  Mapa de desiciones
 | Elemento | Decisión de Diseño | Significado Narrativo / Justificación |
 | :--- | :--- | :--- |
 | **Emisión (Lluvia)** | Cenizas constantes cayendo desde el borde superior (`y = -10`) con un intervalo de `frameCount % 15`. | Representa la **Entropía Universal**: la materia física que llega constantemente al mundo, destinada a ocupar un lugar en el plano terrenal. |
