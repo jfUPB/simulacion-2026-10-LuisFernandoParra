@@ -169,3 +169,55 @@ class Flama extends Ceniza {
 
 
 ## Bitácora de reflexión
+
+
+## Parte 1 — Los 10 Principios Fundamentales
+
+### 1. Una partícula es una entidad con estado
+Cada partícula es un objeto independiente con su propia "memoria". No es un simple dibujo en pantalla, sino una entidad que almacena variables específicas como su posición (`pos`), velocidad (`vel`) y nivel de transparencia (`vida`).
+
+### 2. Una partícula tiene ciclo de vida
+Las partículas no son infinitas; pasan por un proceso biológico simulado. Nacen (se instancian), crecen o se transforman (cambian de Ceniza a Flama) y finalmente mueren cuando cumplen una condición lógica, como agotar su tiempo de vida.
+
+### 3. Gestión de colecciones dinámicas de elementos
+El sistema utiliza estructuras de datos flexibles (como los *Arrays*). Esto permite que el número de elementos en pantalla cambie constantemente, creciendo cuando caen cenizas y encogiéndose cuando las flamas se desvanecen, adaptándose en tiempo real.
+
+### 4. Creación y eliminación como parte central del modelo
+Eliminar una partícula no es solo un detalle técnico para optimizar; es una decisión narrativa. En esta obra, la "muerte" de la flama es el evento que permite que el ciclo de energía continúe, haciendo que la gestión de memoria sea parte de la estética.
+
+### 5. Separación entre la lógica individual y la del sistema
+Existe una división de responsabilidades: la clase (Ceniza/Flama) sabe cómo moverse y dibujarse a sí misma, mientras que el sistema central (el emisor en el `draw`) decide cuándo crearlas, cuántas pueden existir y cuándo darles la orden de actualizarse.
+
+### 6. El emisor o "Particle System" como abstracción
+El emisor es la fuente o "grifo" de la simulación. Es una entidad lógica que define el punto de origen y la frecuencia con la que la materia (cenizas) entra al sistema, actuando como el motor que mantiene el flujo constante.
+
+### 7. Sistemas de sistemas
+Es la capacidad de anidar comportamientos. Podríamos tener un sistema principal de cenizas interactuando con sub-sistemas de chispas o efectos de explosión, creando capas de complejidad que conviven en el mismo espacio.
+
+### 8. Heterogeneidad mediante herencia y polimorfismo
+Permite que el sistema gestione elementos distintos bajo una misma estructura. Gracias a la herencia, las flamas y cenizas comparten una base, pero el polimorfismo permite que cada una reaccione de forma única (unas caen y otras suben).
+
+### 9. Respuesta a fuerzas globales y locales
+Las partículas reaccionan a su entorno. En este proyecto, la **gravedad** es una fuerza global que afecta a todas las cenizas por igual, mientras que el **mouse** actúa como una fuerza local que solo afecta a las partículas en su radio de cercanía.
+
+### 10. Independencia de la representación visual
+El motor físico y algorítmico es independiente del dibujo. El cálculo de movimiento (física de vectores) seguiría siendo el mismo si en lugar de círculos usáramos imágenes, líneas o modelos 3D en el método `display`.
+
+---
+
+## Parte 2 — Transferencia a otra herramienta (Unity / Blender)
+
+Si decidiera recrear la obra **"Polvo Eres"** en un motor como **Unity** (VFX Graph) o un software como **Blender** (Geometry Nodes), se presentarían los siguientes cambios y permanencias:
+
+### ¿Qué se mantendría IGUAL?
+* **La Lógica de Fuerzas:** El uso de un vector de gravedad para atraer la materia al suelo y un "atractor" (el cursor) para elevarla.
+* **El Ciclo de Vida:** La regla de que cada entidad debe destruirse al cumplir un tiempo de vida o llegar a una altura específica para liberar recursos.
+* **La Narrativa de Interacción:** La idea central de transformar materia inerte en energía ascendente a través de la intervención del usuario.
+
+### ¿Qué CAMBIARÍA?
+* **El Lenguaje y Herramientas:** Pasaría de escribir código en **JavaScript/p5.js** a usar **C#** (en Unity) o sistemas de **nodos visuales** (en Blender).
+* **La Dimensión del Espacio:** El proyecto pasaría de coordenadas 2D $(x, y)$ a un entorno 3D $(x, y, z)$, permitiendo que la lluvia de cenizas tenga profundidad y volumen.
+* **Capacidad de Renderizado:** En Unity podría usar *Shaders* avanzados para que las flamas emitan luz real y tengan efectos de post-procesamiento como el *Bloom* (brillo intenso).
+
+### Elementos independientes de la herramienta
+El diseño del **comportamiento** es totalmente independiente. La tasa de emisión de la lluvia, la velocidad de ascenso de las flamas y la decisión estética de que la muerte sea un estallido visual son decisiones de **Diseño de Experiencia** que trascienden el código y pueden aplicarse en cualquier software.
