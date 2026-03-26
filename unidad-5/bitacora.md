@@ -5,6 +5,21 @@
 ## Bitácora de aplicación 
 
 
+### 1. Mapa de desiciones
+| Elemento | Decisión de Diseño | Significado Narrativo / Justificación |
+| :--- | :--- | :--- |
+| **Emisión (Lluvia)** | Cenizas constantes cayendo desde el borde superior (`y = -10`) con un intervalo de `frameCount % 15`. | Representa la **Entropía Universal**: la materia física que llega constantemente al mundo, destinada a ocupar un lugar en el plano terrenal. |
+| **Fuerzas (Gravedad)** | Vector vertical hacia abajo `(0, 0.2)` aplicado a las partículas tipo `Ceniza`. | Simboliza el **Peso de la Existencia**: la fuerza inevitable que atrae la materia hacia la quietud, la inercia y el reposo en la tierra. |
+| **Visualización** | Contraste entre círculos grises opacos (Ceniza) y elipses neón con transparencia (Flama). | Representa el paso de lo **Inerte** a lo **Vital**; el color naranja/amarillo es la chispa de energía o "alma" que se consume mientras asciende. |
+| **Interacción** | Cambio de estado de `Ceniza` a `Flama` por proximidad al cursor (`dist < 30`). | Representa el **Acto de Animación**: El usuario no crea materia de la nada, sino que "despierta" lo que ya existe. Es el catalizador que otorga propósito. |
+| **Condición de Muerte** | La flama estalla en un destello visual y se elimina al llegar al límite superior o agotar su `vida`. | Simboliza la **Liberación Final**: A diferencia del cuerpo, la energía se expande y se funde con el vacío, cumpliendo su ciclo de trascendencia. |
+
+---
+
+
+<img width="1002" height="199" alt="image" src="https://github.com/user-attachments/assets/f4275c18-6dea-42de-aa4b-3018075bb8f0" />
+
+
 - link: https://editor.p5js.org/LuisFernandoParra/full/J_8Q3NjtV
 ```JS
 let particulas = [];
