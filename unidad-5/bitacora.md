@@ -4,6 +4,11 @@
 
 ## Bitácora de aplicación 
 
+-Inspirada en la premisa "polvo eres y en polvo te convertirás", la obra captura el ciclo eterno entre la materia inerte y la energía vital.
+
+-Las cenizas descienden al reposo terrenal hasta que el tacto las despierta en flamas ascendentes que estallan y se liberan en el aire.
+
+-Esta pieza busca comunicar que la existencia debe consumirse y morir para liberar la energía necesaria que permitirá el nacimiento de un nuevo ciclo.
 
 ###  Mapa de desiciones
 | Elemento | Decisión de Diseño | Significado Narrativo / Justificación |
