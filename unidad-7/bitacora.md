@@ -17,8 +17,9 @@ La pieza explora la naturaleza efímera de la materia y la comunicación. El hum
 *   **Comportamental:** El sistema utiliza un **motor de físicas (Matter.js)** donde las letras tienen masa y fricción, reaccionando a fuerzas externas simuladas por el viento y el aliento.
 
 ## 4. Moodboard o Referencias
-*   **Referencia Cinematográfica:** La atmósfera visual se inspira en el expresionismo y el cine fantástico, analizando texturas de directores como Guillermo del Toro.
-*   **Referencia Técnica:** Instalaciones de arte generativo que utilizan el sonido como input físico para modificar partículas en tiempo real.
+<img width="1080" height="1350" alt="Black White and Red Modern Fashion Moodboard Instagram Post" src="https://github.com/user-attachments/assets/fd2128da-3510-4f99-b782-ecad31b00edb" />
+
+- link de referencia de la animacion: la referencia es la animacion que se ve al inicio del video https://www.youtube.com/watch?v=NkAk2b8nudE&t=1s
   
 ## 5. Bocetos
 > *En esta sección se integran los registros visuales preliminares y esquemas de diseño de la interfaz.*
