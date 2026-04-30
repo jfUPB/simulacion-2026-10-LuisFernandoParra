@@ -4,7 +4,7 @@
 
 
 ## Bitácora de aplicación 
-# Documentación de Proyecto: SMOKE (Instalación Interactiva)
+# Documentación de Proyecto: SMOKE 
 
 ## 1. Palabra Elegida
 **SMOKE** (Humo)
