@@ -20,24 +20,24 @@ La pieza explora la naturaleza efímera de la materia y la comunicación. El hum
 *   **Referencia Cinematográfica:** La atmósfera visual se inspira en el expresionismo y el cine fantástico, analizando texturas de directores como Guillermo del Toro.
 *   **Referencia Técnica:** Instalaciones de arte generativo que utilizan el sonido como input físico para modificar partículas en tiempo real.
 
-## 5. Bocetos y Mapa de Decisiones
+## 6. Bocetos y Mapa de Decisiones
 *   **Decisión Crítica 1:** Uso de **FFT (Fast Fourier Transform)** para filtrar ruido ambiente. Se decidió priorizar frecuencias agudas (`highMid` y `treble`) para diferenciar el soplido de la voz humana en entornos ruidosos como el museo.
 *   **Decisión Crítica 2:** Implementación de la letra "E" con un impulso vertical extra para garantizar una limpieza total del lienzo al final del ciclo.
 
-## 6. Mapa de Interpretación
+## 7. Mapa de Interpretación
 1.  **Entrada (Input):** Aliento del usuario captado por micrófono.
 2.  **Proceso:** Análisis de espectro de audio -> Aplicación de fuerzas en Matter.js.
 3.  **Salida (Output):** Revelación de letras formadas por partículas y partículas de humo en movimiento.
 
-## 7. Relación entre Audio y Comportamiento
+## 8. Relación entre Audio y Comportamiento
 *   **Soplido Suave:** Genera nubes de transición y revela las letras de forma secuencial.
 *   **Soplido de Cierre:** Al completar la palabra, el sistema detecta un soplido final que activa el audio `tos.mp3`, simbolizando la saturación, y limpia físicamente todas las letras del canvas.
 
-## 8. Evidencia del Uso de IA
+## 9. Evidencia del Uso de IA
 *   **Asistente:** Gemini (Google).
 *   **Colaboración:** Optimización de algoritmos de filtrado de audio, resolución de conflictos en el motor de físicas Matter.js y refinamiento de la lógica de tracking de partículas para la instalación en el Museo Juan del Corral.
 
-## 9. Código Fuente 
+## 10. Código Fuente 
 ```JS
 let engine, world;
 let Engine, World, Bodies, Body, Constraint, Composite;
@@ -258,9 +258,13 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
 ```
-## 10. Registros de la Pieza
-*   **Entorno:** Diseñado para visualización en Pantalla Completa (Tecla 'F').
-*   **Interacción:** Feedback visual inmediato mediante cambio de opacidad (`visibleAlpha`) y fuerzas físicas.
-## 11. Enlace al sketchhttps:
+## 11. Enlace al sketch:
 *   https://editor.p5js.org/LuisFernandoParra/full/taw2zLyiN
+## 12 capturas o registros
+<img width="717" height="583" alt="image" src="https://github.com/user-attachments/assets/0cda45da-e274-43ca-8723-0a60ce05b922" />
+<img width="1177" height="583" alt="image" src="https://github.com/user-attachments/assets/5d9f34fb-791d-4578-a168-e9310f276ffc" />
+<img width="1220" height="572" alt="image" src="https://github.com/user-attachments/assets/b419e313-9d2d-4b47-9870-49934fc76842" />
+<img width="1133" height="400" alt="image" src="https://github.com/user-attachments/assets/0ce4af17-1726-4037-b840-fa3239f18a76" />
+<img width="1216" height="575" alt="image" src="https://github.com/user-attachments/assets/8a613c48-ed31-4697-be73-08474a9d26a7" />
+
 ## Bitácora de reflexión
