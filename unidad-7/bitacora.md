@@ -16,7 +16,7 @@ La pieza explora la naturaleza efímera de la materia y la comunicación. El hum
 *   **Visual:** Se utiliza una estética de partículas con transparencias degradadas y crecimiento cónico para imitar el comportamiento fluido del gas.
 *   **Comportamental:** El sistema utiliza un **motor de físicas (Matter.js)** donde las letras tienen masa y fricción, reaccionando a fuerzas externas simuladas por el viento y el aliento.
 
-## 4. Moodboard y Referencias
+## 4. Moodboard o Referencias
 *   **Referencia Cinematográfica:** La atmósfera visual se inspira en el expresionismo y el cine fantástico, analizando texturas de directores como Guillermo del Toro.
 *   **Referencia Técnica:** Instalaciones de arte generativo que utilizan el sonido como input físico para modificar partículas en tiempo real.
   
