@@ -23,9 +23,17 @@ La pieza explora la naturaleza efímera de la materia y la comunicación. El hum
 ## 5. Bocetos
 > *En esta sección se integran los registros visuales preliminares y esquemas de diseño de la interfaz.*
 
-## 6. Mapa de Decisiones
-*   **Decisión Crítica 1:** Uso de **FFT (Fast Fourier Transform)** para filtrar ruido ambiente. Se decidió priorizar frecuencias agudas (`highMid` y `treble`) para diferenciar el soplido de la voz humana en entornos ruidosos como el museo.
-*   **Decisión Crítica 2:** Implementación de la letra "E" con un impulso vertical extra para garantizar una limpieza total del lienzo al final del ciclo.
+## 6. Mapa de Decisiones## 9. Mapa de Decisiones
+
+| Elemento | Decisión Técnica | Significado / Intención |
+| :--- | :--- | :--- |
+| **Forma** | Tipografía **Modak** de formas redondeadas y gruesas. | Evoca la densidad y la fluidez del humo, alejándose de lo rígido para parecer una formación gaseosa. |
+| **Física** | Alta fricción de aire post-revelado (`frictionAir: 0.25`). | Simula el comportamiento del humo real que, tras el impulso inicial, queda suspendido y denso en el ambiente. |
+| **Física** | Anclajes elásticos dinámicos (`Constraints` con `stiffness: 0.1`). | Representa la fragilidad de la palabra; las letras no son sólidas, sino que vibran y se deforman como si estuvieran hechas de vapor. |
+| **Audio** | Filtro Diferencial Agudo (`highMid` + `treble`). | Actúa como un sensor de "aliento humano", permitiendo una interacción íntima (soplido calmado) y bloqueando el ruido ambiente del museo. |
+| **Audio** | Disparo de archivo `tos.mp3` al completar el ciclo. | Aporta una capa semántica de "toxicidad" o saturación; el audio valida la desaparición física de la palabra en el lienzo. |
+| **Visual** | Expansión cónica de partículas mediante mapeo de posición `X`. | Emula la dispersión física de un gas que sale de la boca del usuario y se expande a medida que viaja por el espacio. |
+| **Interacción** | Secuencia de revelado inverso (`wordOrder: [4, 3, 2, 1, 0]`). | Genera una construcción narrativa de la palabra desde la profundidad del canvas hacia el espectador. |
 
 ## 7. Mapa de Interpretación
 1.  **Entrada (Input):** Aliento del usuario captado por micrófono.
@@ -263,6 +271,7 @@ function windowResized() {
 ```
 ## 11. Enlace al sketch:
 *   https://editor.p5js.org/LuisFernandoParra/full/taw2zLyiN
+  
 ## 12 capturas o registros
 <img width="717" height="583" alt="image" src="https://github.com/user-attachments/assets/0cda45da-e274-43ca-8723-0a60ce05b922" />
 <img width="1177" height="583" alt="image" src="https://github.com/user-attachments/assets/5d9f34fb-791d-4578-a168-e9310f276ffc" />
