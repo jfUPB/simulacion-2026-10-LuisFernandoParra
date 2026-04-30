@@ -19,8 +19,11 @@ La pieza explora la naturaleza efímera de la materia y la comunicación. El hum
 ## 4. Moodboard y Referencias
 *   **Referencia Cinematográfica:** La atmósfera visual se inspira en el expresionismo y el cine fantástico, analizando texturas de directores como Guillermo del Toro.
 *   **Referencia Técnica:** Instalaciones de arte generativo que utilizan el sonido como input físico para modificar partículas en tiempo real.
+  
+## 5. Bocetos
+> *En esta sección se integran los registros visuales preliminares y esquemas de diseño de la interfaz.*
 
-## 6. Bocetos y Mapa de Decisiones
+## 6. Mapa de Decisiones
 *   **Decisión Crítica 1:** Uso de **FFT (Fast Fourier Transform)** para filtrar ruido ambiente. Se decidió priorizar frecuencias agudas (`highMid` y `treble`) para diferenciar el soplido de la voz humana en entornos ruidosos como el museo.
 *   **Decisión Crítica 2:** Implementación de la letra "E" con un impulso vertical extra para garantizar una limpieza total del lienzo al final del ciclo.
 
