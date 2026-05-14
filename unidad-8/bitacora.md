@@ -209,3 +209,6 @@ Sin embargo, la integración completa del proyecto, la estructura de la experien
 La inteligencia artificial funcionó únicamente como soporte técnico puntual dentro del proceso de desarrollo y depuración del proyecto.
 # Código, archivo, proyecto o documentación técnica según la herramienta
 https://drive.google.com/drive/folders/1iumycOTo4R-bRjA_OUQpz-KJHl9qhv7i?usp=sharing
+
+# Registro visual de la pieza
+https://youtu.be/xS5F1IJB_UU
