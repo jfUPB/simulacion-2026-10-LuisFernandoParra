@@ -202,15 +202,7 @@ La IA fue utilizada para:
 - resolución de problemas técnicos,
 - debugging,
 - planeación narrativa,
-- generación de lógica de transición,
-- asistencia en Three.js,
-- integración audiovisual,
-- optimización de flujo visual.
-
-También fue utilizada como apoyo conceptual para:
-- decisiones cinematográficas,
-- construcción de experiencia inmersiva,
-- y composición secuencial.
+  
 
 ---
 
